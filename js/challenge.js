@@ -41,5 +41,5 @@ pauseToggler.addEventListener("click", function() {
 });
 
 function refreshCountDisplay(){
-  
+
 }
