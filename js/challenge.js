@@ -45,7 +45,7 @@ pauseToggler.addEventListener("click", function() {
 
 commentSubmitter.addEventListener("click", function(event) {
     event.preventDefault();
-    comments.push(newCommentContent.innerText);
+    comments.push(newCommentContent.value);
     refreshCommentsDisplay();
 });
 
