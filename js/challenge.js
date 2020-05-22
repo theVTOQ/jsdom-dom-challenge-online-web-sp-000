@@ -35,7 +35,7 @@ pauseToggler.addEventListener("click", function() {
   }
 });
 
-function incrementCount(increment: 1){
+function incrementCount(increment = 1){
   count += increment;
   refreshCountDisplay();
 }
