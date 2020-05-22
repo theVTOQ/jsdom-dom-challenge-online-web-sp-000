@@ -58,7 +58,7 @@ function refreshCountDisplay(){
 function refreshCommentDisplay(){
   const commentListHTML = "";
   for(let i = 0; i < comments.length; i++){
-      commentListHTML += (`<li>${comments[0]}</li>`);
+      commentListHTML += `<li>${comments[0]}</li>`;
   }
   commentDisplay.innerHTML = count;
 }
