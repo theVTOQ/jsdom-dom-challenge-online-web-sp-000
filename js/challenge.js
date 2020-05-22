@@ -22,10 +22,7 @@ decrementor.addEventListener("click", function(){
     refreshCountDisplay();
 });
 
-incrementor.addEventListener("click", function(){
-    count += 1;
-    refreshCountDisplay();
-});
+incrementor.addEventListener("click", incrementCount());
 
 liker.addEventListener("click", function(){
     countLikes[count] += 1
@@ -40,6 +37,11 @@ pauseToggler.addEventListener("click", function() {
     eventListeningNodes[i].disabled = !proceed;
   }
 });
+
+function incrementCount(){
+  count += 1;
+  refreshCountDisplay();
+}
 
 function refreshCountDisplay(){
 
