@@ -26,7 +26,7 @@ incrementor.addEventListener("click", incrementCount());
 
 liker.addEventListener("click", function(){
     countLikes[count] += 1
-    refreshCommentDisplay();
+    refreshCountLikesDisplay();
 });
 
 pauseToggler.addEventListener("click", function() {
