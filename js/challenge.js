@@ -45,7 +45,7 @@ pauseToggler.addEventListener("click", function() {
 
 commentSubmitter.addEventListener("click", function() {
     comments.push(newCommentContent.innerText);
-    refreshCommentDisplay();
+    refreshCommentsDisplay();
 });
 
 function incrementCount(increment = 1){
@@ -65,13 +65,13 @@ function refreshCountLikesDisplay(){
   countLikesDisplay.innerHTML = countLikesListHtml;
 }
 
-function refreshCommentDisplay(){
+function refreshCommentsDisplay(){
   let commentListHtml = "<ul>";
   for(let i = 0; i < comments.length; i++){
       commentListHtml +=`<li>${comments[0]}</li>`;
   }
   commentListHtml += "</ul>";
-  commentDisplay.innerHTML = commentListHtml;
+  commentsDisplay.innerHTML = commentListHtml;
 }
 
 //incrementing count every second:
