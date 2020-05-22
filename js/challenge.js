@@ -47,6 +47,7 @@ commentSubmitter.addEventListener("click", function(event) {
     event.preventDefault();
     comments.push(newCommentContent.value);
     refreshCommentsDisplay();
+    event.target.reset();
 });
 
 function incrementCount(increment = 1){
