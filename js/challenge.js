@@ -18,7 +18,7 @@ const incrementor = document.getElementById("plus");
 const liker = document.getElementById("heart");
 const pauseToggler = document.getElementById("pause");
 const commentSubmitter = document.querySelector("button#sumbit"); //not sure why this doesn't work, but it doesn't
-//const commentSubmitter = document.getElementsByTagName("form")[0];
+const commentSubmitter = document.querySelector("form#comment-form button");
 const eventListeningNodes = [decrementor, incrementor, liker, commentSubmitter]; //to disable when paused
 
 //event listening:
