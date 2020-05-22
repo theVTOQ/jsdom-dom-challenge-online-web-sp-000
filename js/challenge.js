@@ -25,7 +25,9 @@ const newCommentForm = document.querySelector("form#comment-form");
 const eventListeningNodes = [decrementor, incrementor, liker, newCommentForm]; //to disable when paused
 
 //event listening:
-decrementor.addEventListener("click", incrementCount(-1));
+decrementor.addEventListener("click", function(){
+  incrementCount(-1)
+});
 incrementor.addEventListener("click", function(){
   incrementCount();
 });
