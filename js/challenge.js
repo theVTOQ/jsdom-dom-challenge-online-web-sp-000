@@ -38,8 +38,8 @@ pauseToggler.addEventListener("click", function() {
   }
 });
 
-function incrementCount(){
-  count += 1;
+function incrementCount(increment: 1){
+  count += increment;
   refreshCountDisplay();
 }
 
