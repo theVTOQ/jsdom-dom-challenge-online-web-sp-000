@@ -61,10 +61,11 @@ function refreshCountLikesDisplay(){
 }
 
 function refreshCommentDisplay(){
-  const commentListHTML = [];
+  const commentListHTML = "<ul>";
   for(let i = 0; i < comments.length; i++){
       commentListHTML.push(`<li>${comments[0]}</li>`);
   }
+  commentListHtml += "</ul>";
   commentDisplay.innerHTML = count;
 }
 
