@@ -17,10 +17,7 @@ const commentSubmitter = document.getElementById("sumbit");
 const eventListeningNodes= [decrementor, incrementor, liker, pauseToggler, commentSubmitter];
 
 //event listening:
-decrementor.addEventListener("click", function(){
-    count -= 1;
-    refreshCountDisplay();
-});
+decrementor.addEventListener("click", incrementCount(-1));
 
 incrementor.addEventListener("click", incrementCount());
 
