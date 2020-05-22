@@ -25,7 +25,11 @@ decrementor.addEventListener("click", incrementCount(-1));
 incrementor.addEventListener("click", incrementCount());
 
 liker.addEventListener("click", function(){
-    countLikes[count] = countLikes[count] + 1;
+    currentLikesForCount = countLikes[count];
+    if currentLikesForCount == null{
+      countLikes[count] = 1;
+    }
+    countLikes[count] += 1;
     refreshCountLikesDisplay();
 });
 
