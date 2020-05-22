@@ -3,32 +3,35 @@ const countLikes = {}
 let count = 0;
 let proceed = true;
 
-while (proceed) {
-  //for some reason, buttons should only listen for clicks while proceed = true
-  //every second, increment counter
+//nodes that listen to events:
+const decrementor = document.getElementById("minus");
+const incrementor = document.getElementById("plus");
+const liker = document.getElementById("heart");
+const pauseToggler = document.getElementById("pause");
+const commentSubmitter = document.getElementById("sumbit");
+const eventListeningNodes= [decrementor, incrementor, liker, pauseToggler]
 
-  //event listening:
-  const decrementor = document.getElementById("minus");
-  const incrementor = document.getElementById("plus");
-  const liker = document.getElementById("heart");
-  const pauseToggler = document.getElementById("pause");
+//event listening:
+decrementor.addEventListener("click", function(){
+    count -= 1;
+    //refreshCountDisplay();
+});
 
-  decrementor.addEventListener("click", function(){
-      count -= 1;
-      //refreshCountDisplay();
-  });
+incrementor.addEventListener("click", function(){
+    count += 1;
+    //refreshCountDisplay();
+});
 
-  incrementor.addEventListener("click", function(){
-      count += 1;
-      //refreshCountDisplay();
-  });
+liker.addEventListener("click", function(){
+    countLikes[count] += 1
+    //refreshCountLikesDisplay();
+});
 
-  liker.addEventListener("click", function(){
-      countLikes[count] += 1
-      //refreshCountLikesDisplay();
-  });
+pauseToggler.addEventListener("click", function() {
+  proceed = !proceed
+  this.innerText = proceed ? "pause" : "resume";
 
-  pauseToggler.addEventListener("click", function() {
-    proceed = !proceed
-  });
-}
+  for (let i = 0; i < eventListeningNodes.length; i++){
+    eventListeningNodes[i]
+  }
+});
