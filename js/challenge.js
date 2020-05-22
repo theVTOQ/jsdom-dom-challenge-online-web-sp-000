@@ -7,7 +7,7 @@ let proceed = true;
 
 //displays
 const countDisplay = document.getElementById("counter");
-const likesDisplay =  document.getElementsById("likes");
+const countLikesDisplay =  document.getElementsById("likes");
 const commentDisplay =  document.getElementsByTagName("ul")[0];
 const newCommentContent = document.getElementById("comment-input");
 
@@ -50,6 +50,14 @@ function incrementCount(increment = 1){
 
 function refreshCountDisplay(){
   countDisplay.innerText = count;
+}
+
+function refreshCommentDisplay(){
+  const commentListHTML = [];
+  for(let i = 0; i < comments.length; i++){
+      commentListHTML.push(`<li>${comments[0]}</li>`);
+  }
+  commentDisplay.innerHTML = count;
 }
 
 function refreshCommentDisplay(){
