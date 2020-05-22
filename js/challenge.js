@@ -54,4 +54,8 @@ function refreshCommentDisplay(){
 }
 
 //incrementing count every second:
-window.setInterval(incrementCount(), [1000]);
+window.setInterval(function() {
+  if (proceed){
+    incrementCount();
+  }
+}, [1000]);
