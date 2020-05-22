@@ -9,7 +9,7 @@ const incrementor = document.getElementById("plus");
 const liker = document.getElementById("heart");
 const pauseToggler = document.getElementById("pause");
 const commentSubmitter = document.getElementById("sumbit");
-const eventListeningNodes= [decrementor, incrementor, liker, pauseToggler]
+const eventListeningNodes= [decrementor, incrementor, liker, pauseToggler, commentSubmitter];
 
 //event listening:
 decrementor.addEventListener("click", function(){
@@ -32,6 +32,6 @@ pauseToggler.addEventListener("click", function() {
   this.innerText = proceed ? "pause" : "resume";
 
   for (let i = 0; i < eventListeningNodes.length; i++){
-    eventListeningNodes[i]
+    eventListeningNodes[i].disabled = !proceed;
   }
 });
