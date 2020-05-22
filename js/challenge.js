@@ -18,7 +18,6 @@ const eventListeningNodes= [decrementor, incrementor, liker, pauseToggler, comme
 
 //event listening:
 decrementor.addEventListener("click", incrementCount(-1));
-
 incrementor.addEventListener("click", incrementCount());
 
 liker.addEventListener("click", function(){
@@ -41,5 +40,5 @@ function incrementCount(increment: 1){
 }
 
 function refreshCountDisplay(){
-
+  countDisplay.innerText = count;
 }
