@@ -52,7 +52,7 @@ function refreshCountDisplay(){
   countDisplay.innerText = count;
 }
 
-function refreshCommentDisplay(){
+function refreshCountLikesDisplay(){
   countLikesListHtml = "";
   for(let count in countLikes){
     countLikesListHtml += `${count} has ${countLikes[count]} likes`;
