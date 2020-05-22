@@ -44,7 +44,8 @@ pauseToggler.addEventListener("click", function() {
   }
 });
 
-commentSubmitter.addEventListener("click", (event) => {
+//commentSubmitter.addEventListener("click", (event) => {
+newCommentForm.addEventListener("submit", (event) => {
     event.preventDefault();
     comments.push(newCommentContent.value);
     event.target.reset();
