@@ -26,5 +26,9 @@ while (proceed) {
   liker.addEventListener("click", function(){
       countLikes[count] += 1
       //refreshCountLikesDisplay();
-  })
+  });
+
+  pauseToggler.addEventListener("click", function() {
+    proceed = !proceed
+  });
 }
