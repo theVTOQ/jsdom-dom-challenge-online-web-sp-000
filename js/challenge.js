@@ -25,7 +25,7 @@ decrementor.addEventListener("click", incrementCount(-1));
 incrementor.addEventListener("click", incrementCount());
 
 liker.addEventListener("click", function(){
-    countLikes[count] += 1;
+    countLikes[count] = countLikes[count] + 1;
     refreshCountLikesDisplay();
 });
 
