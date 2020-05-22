@@ -46,8 +46,8 @@ pauseToggler.addEventListener("click", function() {
 commentSubmitter.addEventListener("click", (event) => {
     event.preventDefault();
     comments.push(newCommentContent.value);
-    refreshCommentsDisplay();
     event.target.reset();
+    refreshCommentsDisplay();
 });
 
 function incrementCount(increment = 1){
