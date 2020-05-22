@@ -67,7 +67,7 @@ function refreshCountLikesDisplay(){
 function refreshCommentDisplay(){
   let commentListHTML = "<ul>";
   for(let i = 0; i < comments.length; i++){
-      commentListHTML.push(`<li>${comments[0]}</li>`);
+      commentListHTML +=`<li>${comments[0]}</li>`;
   }
   commentListHtml += "</ul>";
   commentDisplay.innerHTML = commentListHtml;
