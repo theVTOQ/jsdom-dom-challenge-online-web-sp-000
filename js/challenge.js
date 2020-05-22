@@ -43,7 +43,7 @@ pauseToggler.addEventListener("click", function() {
   }
 });
 
-commentSubmitter.addEventListener("click", function(event) {
+commentSubmitter.addEventListener("click", (event) => {
     event.preventDefault();
     comments.push(newCommentContent.value);
     refreshCommentsDisplay();
