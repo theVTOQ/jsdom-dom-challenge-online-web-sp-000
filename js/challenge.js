@@ -26,8 +26,9 @@ incrementor.addEventListener("click", incrementCount());
 
 liker.addEventListener("click", function(){
     countLikes[count] += 1;
-    for(){
-
+    countLikesListHtml = "";
+    for(let i in countLikes){
+      countLike
     }
 });
 
@@ -55,9 +56,9 @@ function refreshCountDisplay(){
 }
 
 function refreshCommentDisplay(){
-  const commentListHTML = [];
+  const commentListHTML = "";
   for(let i = 0; i < comments.length; i++){
-      commentListHTML.push(`<li>${comments[0]}</li>`);
+      commentListHTML += (`<li>${comments[0]}</li>`);
   }
   commentDisplay.innerHTML = count;
 }
