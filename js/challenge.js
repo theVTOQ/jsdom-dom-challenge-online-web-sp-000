@@ -7,7 +7,7 @@ let proceed = true;
 
 //displays
 const countDisplay = document.getElementById("counter");
-const countLikesDisplay =  document.getElementById("ul.likes");
+const countLikesDisplay =  document.querySelector("ul.likes");
 //const commentDisplay =  document.getElementsByTagName("ul")[0];
 const newCommentContent = document.getElementById("comment-input");
 
