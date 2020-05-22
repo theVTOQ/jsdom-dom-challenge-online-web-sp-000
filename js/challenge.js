@@ -26,7 +26,7 @@ const eventListeningNodes = [decrementor, incrementor, liker, newCommentForm]; /
 
 //event listening:
 decrementor.addEventListener("click", incrementCount(-1));
-incrementor.addEventListener("click", incrementCount;
+incrementor.addEventListener("click", incrementCount);
 
 liker.addEventListener("click", function(){
     currentLikesForCount = countLikes[count];
