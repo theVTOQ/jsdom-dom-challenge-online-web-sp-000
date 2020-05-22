@@ -77,7 +77,7 @@ function refreshCommentsDisplay(){
       commentListHtml +=`<li>${comments[0]}</li>`;
   }
   commentListHtml += "</ul>";
-  commentsDisplay.innerHTML = commentListHtml;
+  commentsListDisplay.innerHTML = commentListHtml;
 }
 
 //incrementing count every second:
