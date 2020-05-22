@@ -59,7 +59,7 @@ function refreshCountDisplay(){
 function refreshCountLikesDisplay(){
   let countLikesListHtml = "";
   for(let count in countLikes){
-    countLikesListHtml += `$<li>{count} has ${countLikes[count]} likes</li>`;
+    countLikesListHtml += `<li>${count} has ${countLikes[count]} likes</li>`;
   }
   countLikesDisplay.innerHTML = countLikesListHtml;
 }
