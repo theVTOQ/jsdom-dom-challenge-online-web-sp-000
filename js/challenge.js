@@ -53,6 +53,13 @@ function refreshCountDisplay(){
 }
 
 function refreshCommentDisplay(){
+  countLikesListHtml = "";
+  for(let i in countLikes){
+    countLike
+  }
+}
+
+function refreshCommentDisplay(){
   const commentListHTML = [];
   for(let i = 0; i < comments.length; i++){
       commentListHTML.push(`<li>${comments[0]}</li>`);
