@@ -52,3 +52,6 @@ function refreshCommentDisplay(){
   }
   commentDisplay.innerHTML = count;
 }
+
+//incrementing count every second:
+window.setInterval(incrementCount(), [1000]);
