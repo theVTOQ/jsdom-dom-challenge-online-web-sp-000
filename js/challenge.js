@@ -37,6 +37,11 @@ pauseToggler.addEventListener("click", function() {
   }
 });
 
+commentSubmitter.addEventListener("click", function() {
+    comments.push(newCommentContent.innerText);
+    refreshCommentDisplay();
+});
+
 function incrementCount(increment = 1){
   count += increment;
   refreshCountDisplay();
