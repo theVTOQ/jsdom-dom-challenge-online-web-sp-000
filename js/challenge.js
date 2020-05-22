@@ -10,7 +10,7 @@ const countDisplay = document.getElementById("counter");
 const countLikesDisplay =  document.querySelector("ul.likes");
 //const commentDisplay =  document.getElementsByTagName("ul")[0];
 const newCommentContent = document.getElementById("comment-input");
-const commentsDiv = document.querySelector("div.comments");
+const commentsDisplay = document.querySelector("div.comments");
 
 //nodes that listen to events:
 const decrementor = document.getElementById("minus");
