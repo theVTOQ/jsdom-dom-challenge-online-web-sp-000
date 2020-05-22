@@ -16,7 +16,7 @@ const liker = document.getElementById("heart");
 const pauseToggler = document.getElementById("pause");
 //const commentSubmitter = document.querySelector("button#sumbit"); //not sure why this doesn't work, but it doesn't
 const commentSubmitter = document.getElementsByTagName("form")[0];
-const eventListeningNodes= [decrementor, incrementor, liker, pauseToggler, commentSubmitter];
+const eventListeningNodes= [decrementor, incrementor, liker, commentSubmitter];
 
 //event listening:
 decrementor.addEventListener("click", incrementCount(-1));
