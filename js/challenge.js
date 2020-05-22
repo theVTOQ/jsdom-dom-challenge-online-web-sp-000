@@ -19,17 +19,17 @@ const eventListeningNodes= [decrementor, incrementor, liker, pauseToggler, comme
 //event listening:
 decrementor.addEventListener("click", function(){
     count -= 1;
-    //refreshCountDisplay();
+    refreshCountDisplay();
 });
 
 incrementor.addEventListener("click", function(){
     count += 1;
-    //refreshCountDisplay();
+    refreshCountDisplay();
 });
 
 liker.addEventListener("click", function(){
     countLikes[count] += 1
-    //refreshCountLikesDisplay();
+    refreshCommentDisplay();
 });
 
 pauseToggler.addEventListener("click", function() {
