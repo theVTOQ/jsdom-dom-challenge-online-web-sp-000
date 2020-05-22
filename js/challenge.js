@@ -26,10 +26,7 @@ incrementor.addEventListener("click", incrementCount());
 
 liker.addEventListener("click", function(){
     countLikes[count] += 1;
-    countLikesListHtml = "";
-    for(let i in countLikes){
-      countLike
-    }
+    refreshCountLikesDisplay();
 });
 
 pauseToggler.addEventListener("click", function() {
@@ -53,14 +50,6 @@ function incrementCount(increment = 1){
 
 function refreshCountDisplay(){
   countDisplay.innerText = count;
-}
-
-function refreshCommentDisplay(){
-  const commentListHTML = "";
-  for(let i = 0; i < comments.length; i++){
-      commentListHTML += `<li>${comments[0]}</li>`;
-  }
-  commentDisplay.innerHTML = count;
 }
 
 function refreshCommentDisplay(){
