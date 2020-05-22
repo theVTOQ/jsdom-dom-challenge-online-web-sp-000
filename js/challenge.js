@@ -28,6 +28,7 @@ const eventListeningNodes = [decrementor, incrementor, liker, newCommentForm]; /
 decrementor.addEventListener("click", function(){
   incrementCount(-1)
 });
+
 incrementor.addEventListener("click", function(){
   incrementCount();
 });
