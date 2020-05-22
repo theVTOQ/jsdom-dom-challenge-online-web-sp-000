@@ -11,6 +11,7 @@ while (proceed) {
   const decrementor = document.getElementById("minus");
   const incrementor = document.getElementById("plus");
   const liker = document.getElementById("heart");
+  const pauseToggler = document.getElementById("pause");
 
   decrementor.addEventListener("click", function(){
       count -= 1;
