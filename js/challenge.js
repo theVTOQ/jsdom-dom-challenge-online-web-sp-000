@@ -14,7 +14,7 @@ const decrementor = document.getElementById("minus");
 const incrementor = document.getElementById("plus");
 const liker = document.getElementById("heart");
 const pauseToggler = document.getElementById("pause");
-const commentSubmitter = document.querySelectorAll("input[type = sumbit]");
+const commentSubmitter = document.querySelectorAll("button#sumbit");
 const eventListeningNodes= [decrementor, incrementor, liker, pauseToggler, commentSubmitter];
 
 //event listening:
