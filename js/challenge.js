@@ -26,7 +26,7 @@ incrementor.addEventListener("click", incrementCount());
 
 liker.addEventListener("click", function(){
     currentLikesForCount = countLikes[count];
-    if currentLikesForCount == null{
+    if (currentLikesForCount == null){
       countLikes[count] = 1;
     }
     countLikes[count] += 1;
