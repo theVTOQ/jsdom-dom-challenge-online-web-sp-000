@@ -72,11 +72,11 @@ function refreshCountLikesDisplay(){
 }
 
 function refreshCommentsDisplay(){
-  let commentListHtml = "<ul>";
+  let commentListHtml = "";
   for(let i = 0; i < comments.length; i++){
       commentListHtml +=`<li>${comments[0]}</li>`;
   }
-  commentListHtml += "</ul>";
+  commentListHtml += "";
   commentsListDisplay.innerHTML = commentListHtml;
 }
 
