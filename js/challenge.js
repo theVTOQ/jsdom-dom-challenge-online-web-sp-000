@@ -16,8 +16,3 @@ while (proceed) {
       secondCounter -= 1;
   });
 }
-
-
-
-
-
