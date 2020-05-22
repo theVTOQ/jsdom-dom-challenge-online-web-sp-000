@@ -4,12 +4,12 @@
 // const comments = [];
 // let count = 0;
 // let proceed = true;
-// 
+//
 // //displays
 // const countDisplay = document.getElementById("counter");
 // const commentDisplay =  document.getElementsByTagName("ul")[0];
 // const newCommentContent = document.getElementById("comment-input");
-// 
+//
 // //nodes that listen to events:
 // const decrementor = document.getElementById("minus");
 // const incrementor = document.getElementById("plus");
@@ -18,39 +18,39 @@
 // //const commentSubmitter = document.querySelector("button#sumbit"); //not sure why this doesn't work, but it doesn't
 // const commentSubmitter = document.getElementsByTagName("form")[0];
 // const eventListeningNodes = [decrementor, incrementor, liker, commentSubmitter]; //to disable when paused
-// 
+//
 // //event listening:
 // decrementor.addEventListener("click", incrementCount(-1));
 // incrementor.addEventListener("click", incrementCount());
-// 
+//
 // liker.addEventListener("click", function(){
 //     countLikes[count] += 1
 //     refreshCommentDisplay();
 // });
-// 
+//
 // pauseToggler.addEventListener("click", function() {
 //   proceed = !proceed
 //   this.innerText = proceed ? "pause" : "resume";
-// 
+//
 //   for (let i = 0; i < eventListeningNodes.length; i++){
 //     eventListeningNodes[i].disabled = !proceed;
 //   }
 // });
-// 
+//
 // commentSubmitter.addEventListener("click", function() {
 //     comments.push(newCommentContent.innerText);
 //     refreshCommentDisplay();
 // });
-// 
+//
 // function incrementCount(increment = 1){
 //   count += increment;
 //   refreshCountDisplay();
 // }
-// 
+//
 // function refreshCountDisplay(){
 //   countDisplay.innerText = count;
 // }
-// 
+//
 // function refreshCommentDisplay(){
 //   const commentListHTML = [];
 //   for(let i = 0; i < comments.length; i++){
@@ -58,7 +58,7 @@
 //   }
 //   commentDisplay.innerHTML = count;
 // }
-// 
+//
 // //incrementing count every second:
 // window.setInterval(function() {
 //   if (proceed){
