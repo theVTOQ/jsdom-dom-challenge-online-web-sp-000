@@ -25,12 +25,14 @@ decrementor.addEventListener("click", incrementCount(-1));
 incrementor.addEventListener("click", incrementCount());
 
 liker.addEventListener("click", function(){
-    countLikes[count] += 1
-    refreshCountLikesDisplay();
+    countLikes[count] += 1;
+    for(){
+      
+    }
 });
 
 pauseToggler.addEventListener("click", function() {
-  proceed = !proceed
+  proceed = !proceed;
   this.innerText = proceed ? "pause" : "resume";
 
   for (let i = 0; i < eventListeningNodes.length; i++){
